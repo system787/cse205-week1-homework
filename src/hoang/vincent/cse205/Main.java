@@ -6,6 +6,7 @@ package hoang.vincent.cse205;
 import hoang.vincent.cse205.problems.H01_31;
 import hoang.vincent.cse205.problems.H01_34;
 import hoang.vincent.cse205.problems.H01_35;
+import hoang.vincent.cse205.problems.H01_36;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,8 +26,10 @@ public class Main {
         // testH01_31();
         // System.out.println("Testing HO1_34");
         // testH01_34();
-        System.out.println("Testing H01_35");
-        testH01_35();
+        // System.out.println("Testing H01_35");
+        // testH01_35();
+        System.out.println("Testing H01_36");
+        testH01_36();
     }
 
     private void testH01_31() {
@@ -86,6 +89,30 @@ public class Main {
         list = test03.arrayListCreate(-1, 0);
 
         System.out.println(list == null);
+    }
+
+    private void testH01_36() {
+        H01_36 test04 = new H01_36();
+
+        ArrayList<String> pList = new ArrayList<>();
+
+        test04.insertName(null, "Null pList");
+        test04.insertName(pList, null);
+
+        // Normal name insertions
+        String[] names = new String[]{ "James", "Kevin", "Cathy", "Catherine", "Jamie" };
+
+        for (String s : names) {
+            test04.insertName(pList, s);
+        }
+
+        // Multiple duplicate insertions
+        for (int i = 0; i < 3; i++) {
+            test04.insertName(pList, names[0]);
+        }
+
+        // End of list insertion
+        test04.insertName(pList,"Zebra");
     }
 
 }
