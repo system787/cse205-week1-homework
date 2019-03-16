@@ -3,10 +3,7 @@ package hoang.vincent.cse205;
 // CLASS: Main
 // AUTHOR: Vincent Hoang, vnhoang, vnhoang@asu.edu
 
-import hoang.vincent.cse205.problems.H01_31;
-import hoang.vincent.cse205.problems.H01_34;
-import hoang.vincent.cse205.problems.H01_35;
-import hoang.vincent.cse205.problems.H01_36;
+import hoang.vincent.cse205.problems.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,8 +25,10 @@ public class Main {
         // testH01_34();
         // System.out.println("Testing H01_35");
         // testH01_35();
-        System.out.println("Testing H01_36");
-        testH01_36();
+        // System.out.println("Testing H01_36");
+        // testH01_36();
+        System.out.println("Testing H01_37");
+        testH01_37();
     }
 
     private void testH01_31() {
@@ -113,6 +112,52 @@ public class Main {
 
         // End of list insertion
         test04.insertName(pList,"Zebra");
+    }
+
+    private void testH01_37() {
+        H01_37 test05 = new H01_37();
+
+        ArrayList<Integer> pList = new ArrayList<>();
+
+        int[] testNumbers = new int[]{ 1, 1, 1, 1, 2, 3, 4, 5, 5, 6, 7, 7, 7, 8, 9, 9, 0 };
+
+        int[] testMixedNumbers = new int[]{ 15, 1, 99, 7, 22, 66, 33, 44, 7};
+
+        for (int n : testNumbers) {
+            pList.add(n);
+        }
+
+        for (int n : testMixedNumbers) {
+            pList.add(n);
+        }
+
+
+
+        System.out.println(dumpH01_37(pList));
+
+        System.out.println("Removing all \'1\' from list");
+        test05.arrayListRemove(pList, 1);
+        System.out.println(dumpH01_37(pList));
+
+        System.out.println("Removing all \'7\' from list");
+        test05.arrayListRemove(pList, 7);
+        System.out.println(dumpH01_37(pList));
+
+        System.out.println("Removing non-existent number \'9999\' from list");
+        test05.arrayListRemove(pList, 9999);
+        System.out.println(dumpH01_37(pList));
+    }
+
+    private String dumpH01_37(ArrayList<Integer> pList) {
+        StringBuffer sb = new StringBuffer("Current pList: ");
+
+
+        for (int n : pList) {
+            sb.append(n);
+            sb.append(" ");
+        }
+
+        return sb.toString();
     }
 
 }

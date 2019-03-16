@@ -71,10 +71,12 @@ public class H01_36 {
             }
 
             Logger.getLogger(TAG).log(Level.INFO, "Done inserting. listSize = " + pList.size());
-            logListContents(pList);
         } else {
             Logger.getLogger(TAG).log(Level.WARNING, "Either pList or pName was null. Nothing was inserted.");
         }
+
+        // Optional: dump the entirety of pList to logging console to verify order of inserted names.
+        // logListContents(pList);
     }
 
     /**
