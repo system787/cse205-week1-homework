@@ -77,6 +77,11 @@ public class H01_36 {
         }
     }
 
+    /**
+     * logListContents is used to print out the String contents contained in an ArrayList to the logging console for
+     *  easy debugging. Output will be logged into the INFO level.
+     * @param pList ArrayList containing the Strings to log.
+     */
     private void logListContents(ArrayList<String> pList) {
 
         StringBuffer sb = new StringBuffer("Current pList: \n");
