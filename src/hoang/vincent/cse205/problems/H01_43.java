@@ -1,5 +1,8 @@
 package hoang.vincent.cse205.problems;
 
+// CLASS: H01_43
+// AUTHOR: Vincent Hoang, vnhoang, vnhoang@asu.edu
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
