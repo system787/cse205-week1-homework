@@ -1,4 +1,3 @@
-package hoang.vincent.cse205.problems;
 // CLASS: H01_34
 // AUTHOR: Vincent Hoang, vnhoang, vnhoang@asu.edu
 

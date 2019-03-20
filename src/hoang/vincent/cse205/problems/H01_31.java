@@ -1,6 +1,4 @@
-package hoang.vincent.cse205.problems;
-
-// CLASS: H01_31
+// CLASS:  H01_31
 // AUTHOR: Vincent Hoang, vnhoang, vnhoang@asu.edu
 
 import java.util.ArrayList; // Import any required classes so your code will build

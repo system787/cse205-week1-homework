@@ -1,4 +1,5 @@
-package hoang.vincent.cse205.problems;
+// CLASS:  H01_65
+// AUTHOR: Vincent Hoang, vnhoang, vnhoang@asu.edu
 
 public class H01_65 {
     private int mX;
